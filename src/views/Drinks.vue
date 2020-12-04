@@ -71,7 +71,7 @@ export default {
     searchDrink() { // disini kita akan buat pencarian dengan memanfaatkan axios dengan q sebagai parameter atau value yang akan di cari
       axios
         .get(
-          "http://localhost:3000/drinks?q=" + this.search
+          "https://my-json-server.typicode.com/RachelGultom2000/BackendKuliner/drinks?q=" + this.search
         ) /*URL ini diambil dari json placeholder tepatnya di tabel products */
         .then(response => this.setDrinks(response.data)) // jangan pake function karena akan error,karena function tidak di defenisikan.Lebih baik dihapus dan pake tanda panah
         .catch(error => console.log(error));
@@ -83,7 +83,7 @@ Mounting merupakan tipe lifecycle pada Vue yang memungkinkan kita untuk mengakse
     // Make a request for a user with a given ID
     axios
       .get(
-        "http://localhost:3000/drinks"
+        "https://my-json-server.typicode.com/RachelGultom2000/BackendKuliner/drinks"
       ) /*URL ini diambil dari json placeholder tepatnya di tabel products */
       .then(response => this.setDrinks(response.data)) // jangan pake function karena akan error,karena function tidak di defenisikan.Lebih baik dihapus dan pake tanda panah
       .catch(error => console.log(error));

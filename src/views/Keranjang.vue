@@ -139,7 +139,7 @@ export default {
     },
     hapusKeranjang(id) {
       axios
-        .delete("http://localhost:3000/keranjangs/" + id)
+        .delete("https://my-json-server.typicode.com/RachelGultom2000/BackendKuliner/keranjangs/" + id)
         .then(() => {
           this.$toast.error("Sukses Hapus Keranjang", {
             type: "error",
@@ -150,7 +150,7 @@ export default {
 
           // Update Data keranjang
           axios
-            .get("http://localhost:3000/keranjangs")
+            .get("https://my-json-server.typicode.com/RachelGultom2000/BackendKuliner/keranjangs")
             .then((response) => this.setKeranjangs(response.data))
             .catch((error) => console.log(error));
         })
@@ -160,13 +160,13 @@ export default {
       if (this.pesan.nama && this.pesan.noMeja) {
         this.pesan.keranjangs = this.keranjangs;
         axios
-          .post("http://localhost:3000/pesanans", this.pesan)
+          .post("https://my-json-server.typicode.com/RachelGultom2000/BackendKuliner/pesanans", this.pesan)
           .then(() => {
 
             // Hapus Semua Keranjang 
             this.keranjangs.map(function (item) {
               return axios
-                .delete("http://localhost:3000/keranjangs/" + item.id)
+                .delete("https://my-json-server.typicode.com/RachelGultom2000/BackendKuliner/keranjangs/" + item.id)
                 .catch((error) => console.log(error));
             });
 
@@ -191,7 +191,7 @@ export default {
   },
   mounted() {
     axios
-      .get("http://localhost:3000/keranjangs")
+      .get("https://my-json-server.typicode.com/RachelGultom2000/BackendKuliner/keranjangs")
       .then((response) => this.setKeranjangs(response.data))
       .catch((error) => console.log(error));
   },

@@ -89,7 +89,7 @@ Mounting merupakan tipe lifecycle pada Vue yang memungkinkan kita untuk mengakse
   mounted() {
     // Make a request for a user with a given ID
     axios
-      .get("http://localhost:3000/best-products") /*URL ini diambil dari json placeholder tepatnya di tabel products */
+      .get("https://my-json-server.typicode.com/RachelGultom2000/BackendKuliner/best-products") /*URL ini diambil dari json placeholder tepatnya di tabel products */
       .then((response) => this.setProducts(response.data))// jangan pake function karena akan error,karena function tidak di defenisikan.Lebih baik dihapus dan pake tanda panah
       .catch((error) =>  console.log(error))
 
