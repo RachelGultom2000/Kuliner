@@ -87,7 +87,7 @@
               <input type="text" class="form-control" v-model="pesan.nama" />
             </div>
             <div class="form-group">
-              <label for="noMeja">Nomor Meja :</label>
+              <label for="noMeja">Alamat :</label>
               <input type="text" class="form-control" v-model="pesan.noMeja" />
             </div>
 
