@@ -61,7 +61,7 @@ export default {
   mounted() {
     axios
       .get(
-        "http://localhost:3000/keranjangs"
+        "https://my-json-server.typicode.com/RachelGultom2000/BackendKuliner/keranjangs"
       ) /*URL ini diambil dari json placeholder tepatnya di tabel products */
       .then(response => this.setJumlah(response.data)) // jangan pake function karena akan error,karena function tidak di defenisikan.Lebih baik dihapus dan pake tanda panah
       .catch(error => console.log(error));
