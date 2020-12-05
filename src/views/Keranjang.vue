@@ -11,7 +11,7 @@
                 <router-link to="/" class="text-dark">Home</router-link>
               </li>
               <li class="breadcrumb-item">
-                <router-link to="/foods" class="text-dark">Foods</router-link>
+                <router-link to="/foods" class="text-dark">Makanan dan Minuman</router-link>
               </li>
               <li class="breadcrumb-item active" aria-current="page">Keranjang</li>
             </ol>
@@ -29,7 +29,7 @@
             <table class="table">
               <thead>
                 <tr>
-                  <th scope="col">#</th>
+                  <th scope="col">No</th>
                   <th scope="col">Foto</th>
                   <th scope="col">Makanan</th>
                   <th scope="col">Keterangan</th>

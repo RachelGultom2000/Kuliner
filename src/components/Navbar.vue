@@ -12,10 +12,7 @@
               <router-link class="nav-link" to="/">Beranda</router-link>
             </li>
             <li class="nav-item">
-              <router-link class="nav-link" to="/foods">Makanan</router-link>
-            </li>
-              <li class="nav-item">
-              <router-link class="nav-link" to="/drinks">Minuman</router-link>
+              <router-link class="nav-link" to="/foods">Makanan dan Minuman</router-link>
             </li>
              <li class="nav-item">
               <router-link class="nav-link" to="/tentang">Tentang</router-link>
