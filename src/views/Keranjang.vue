@@ -10,6 +10,9 @@
               <li class="breadcrumb-item">
                 <router-link to="/" class="text-dark">Home</router-link>
               </li>
+              <li class="breadcrumb-item">
+                <router-link to="/foods" class="text-dark">Foods</router-link>
+              </li>
               <li class="breadcrumb-item active" aria-current="page">Keranjang</li>
             </ol>
           </nav>
@@ -26,7 +29,7 @@
             <table class="table">
               <thead>
                 <tr>
-                  <th scope="col">No</th>
+                  <th scope="col">#</th>
                   <th scope="col">Foto</th>
                   <th scope="col">Makanan</th>
                   <th scope="col">Keterangan</th>
@@ -75,26 +78,6 @@
         </div>
       </div>
 
-       <!-- Form Checkout 
-      <div class="row justify-content-end">
-        <div class="col-md-4">
-          <form class="mt-4" v-on:submit.prevent>
-            <div class="form-group">
-              <label for="nama">Nama :</label>
-              <input type="text" class="form-control" v-model="pesan.nama" />
-            </div>
-            <div class="form-group">
-              <label for="alamat">Alamat :</label>
-              <input type="text" class="form-control" v-model="pesan.noMeja" />
-            </div>
-
-            <button type="submit" class="btn btn-success float-right" @click="checkout">
-              <b-icon-cart></b-icon-cart> Pesan
-            </button>
-          </form>
-        </div>
-      </div> -->
-
       <!-- Form Checkout -->
       <div class="row justify-content-end">
         <div class="col-md-4">
@@ -104,12 +87,12 @@
               <input type="text" class="form-control" v-model="pesan.nama" />
             </div>
             <div class="form-group">
-              <label for="alamat">Alamat :</label>
+              <label for="noMeja">Nomor Meja :</label>
               <input type="text" class="form-control" v-model="pesan.noMeja" />
             </div>
 
             <button type="submit" class="btn btn-success float-right" @click="checkout">
-              <b-icon-cart></b-icon-cart> Pesan
+              <b-icon-cart></b-icon-cart>Pesan
             </button>
           </form>
         </div>
