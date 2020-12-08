@@ -34,8 +34,8 @@
           <div class="d-flex h-100">
             <div class="justify-content-center align-self-center">
               <h2>
-                <strong>Delivious Food Menu</strong>
-                <br />in Your Gadget
+                <strong>Menu Khas Masakan Indonesia</strong>
+                <br />pas di genggaman anda
               </h2>
               <p>Ayo pilih makanan favorit anda</p>
               <router-link to="/foods"  class="btn btn-lg btn-success">

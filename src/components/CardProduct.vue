@@ -1,4 +1,5 @@
 <template>
+<!--  <meta name="dicoding:email" content="rachelgultom5@gmail.com"> -->
   <!-- <h2>{{ product.nama }}</h2> -->
   <div class="card shadow card-product">
     <img :src="'assets/images/' + product.gambar" class="card-img-top" alt="..." /> 

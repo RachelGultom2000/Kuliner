@@ -8,12 +8,12 @@
           <nav aria-label="breadcrumb">
             <ol class="breadcrumb">
               <li class="breadcrumb-item">
-                <router-link to="/" class="text-dark">Home</router-link>
+                <router-link to="/" class="text-dark">Beranda</router-link>
               </li>
               <li class="breadcrumb-item">
-                <router-link to="/foods" class="text-dark">Foods</router-link>
+                <router-link to="/foods" class="text-dark">Makanan</router-link>
               </li>
-              <li class="breadcrumb-item active" aria-current="page">Food Order</li>
+              <li class="breadcrumb-item active" aria-current="page">Pesanan</li>
             </ol>
           </nav>
         </div>
